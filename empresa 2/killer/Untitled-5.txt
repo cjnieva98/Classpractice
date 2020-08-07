@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>Psycho killer pack</h1>
+        <h2>What do you have with this xtrem ticket?</h2>
+        
+        <a href="../tickets.html">back to tickets</a>
+    </body>
+
+</html>
