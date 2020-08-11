@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+            <label for="nom">
+                NOM:
+            </label>
+            <input type="text" id="nom" size="30">
+         <br />
+         Cognom:
+            <input type="text" size="70">
+        <br />
+        edad:
+            <input type="text" size="5">
+        <br />
+        Password:
+        <input type="password">
+        <br />
+        <!--amb el date podrem triar nosaltres la data en un caledari-->
+        Data naixement:
+        
+        <input type="date" min="2020-03-19">
+        <br />
+        <!--podemos escoger hora y fecha-->
+        Hora visita:
+        <input type="datetime-local">
+        <br />
+        <!--Surt un cuadra de color per triar-->
+        COLOR:
+        <input type="color">
+        <br />
+        <!--contador amb numeros, la lletra E ens la deiza posar perque forma part dels numeros-->
+        Edad:
+        <input type="number">
+        <br />
+        edad:
+        <input type="url">
+        <br />
+        Comentarios:
+        <!--l'usurari pot escriure el que li dongui la gana en el quadre de  comentaris-->
+        <br />
+            <textarea cols="100" rows="10">
+    
+            </textarea>
+        <!--casillas  de verificacion:-->
+        <br />
+        <label for="privacitat">
+            He leido y acepto la politica de la web
+        </label>
+        <!--podemos crear un enlace target blank para abrir 
+            otra ventada con toda la inforacion (web tip)-->
+        <input type="checkbox" id="privacitat">
+        <br />
+        <br />
+        HORARI
+        <br />
+        <!--perque vagin tots junts i nomes et deixi marcar un hem de posarlis el mateix NAME-->
+        <input type="radio"name="horari" value="matins">matins
+        <input type="radio" name="horari" value="tardes">tardes
+        <input type="radio" name="horari" value="vespre"> vespre
+        <br />
+        <br />
+        Dia setmana:
+        <br />
+        <!--sempre posem un name i un id-->
+        <select name="dia de la  setmana">
+            <option value="dilluns">dilluns</option>
+            <option value="martes">martes</option>
+
+        </select>
+        <br />
+        <br />
+        Dia setmana:
+        <br />
+        <select name="dia de la  setmana" size="5" multiple>
+            <option value="dilluns">dilluns</option>
+            <option value="martes">martes</option>
+            <option value="dimecres"> dimecres</option>
+
+        </select>
+        <br />
+        <br />
+        <!--boto de enviar del formulari-->
+        <input type="submit" value="enviasion">
+        <!--boto de restablecer el formulario, es decir, se borra todas las capsulas-->
+        <input type="reset">
+        <!--per defecte no fa res pero en programacio es podra programar per el que volguem-->
+        <input type="button">
+        </form>
+
+        <!--No tots els navegadors poden llegir els codics, en aquest cas si el navegador es molt vell
+        l'ordinador llegira el codi com a type="text"-->
+
+        <!--tots els controls de formulari tenen que tenir un parametre NAME i un ID-->
+       
+
+    </body>
+</html>
