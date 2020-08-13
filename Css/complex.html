@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>cssuno</title>
+        <meta name="keywords" content="">
+        <style type="text/css">
+            u {
+                color:red;
+            }
+            h1 u {
+                color:blue;
+            }
+            p u{
+                color:green;
+            }
+            table p u{
+                color:yellow;
+            }
+            .temporal{
+                font-size: 5pt;
+            }
+            p .temporal{
+                font-size: 2pt
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <h1>hola <u>que</u> tal</h1>
+        <p>"But I must explain to you how all this mistaken idea of denouncing pleasure 
+            and praising pain <u>was born and I will give yo</u>u a complete account of the system, 
+            and expound the actual teachings of the great explorer of the truth, the master-
+            builder of human happiness.</p>
+        <p class="temporal">"But I must explain to you how all this mistaken idea of denouncing pleasure and
+            praising pain was born and I will give you a complete account of the system,
+            and expound the actual <u>teachings of the great explorer of the truth</u>, the master-builder 
+            of human happiness.</p>
+        <p>"But I must explain to you how all this mistaken <u class="temporal">idea of denouncing</u> pleasure and praising
+            pain was born and I will give you a complete account of the system, and expound the actual 
+            teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+        <br />
+        <table border="1" width="400">
+            <tr>
+                <td>
+                    <p>"Lorem ipsum dolor sit amet, <u class="temporal">consectetur adipiscing elit</u>, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <br />
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et <u>dolore magna aliqua</u>. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </td>
+            </tr>
+
+        </table>
+    </body>
+</html>
