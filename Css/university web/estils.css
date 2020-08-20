@@ -1,10 +1,67 @@
 body{
     margin: 0  0px;
 }
+#container3{
+    background-color:white;
+    width: 100%;
+    height: 700px;
+}
+.library{
+    background-color: white;
+    width: 550px;
+    height: 400px;
+    position: absolute;
+    top: 110px;
+    left: 120px;
+    box-shadow: 2px 4px 4px 1px grey;
+    z-index: 2;
+}
+.library p{
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.library p b{
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px
+}
+.foto img{
+    width: 650px;
+    height: 450px;
+    position: relative;
+    float: right;
+    right: 100px;
+    top: 50px;
+    z-index: 1;
+}
+.cap{
+    background-color: rgb(128, 0, 128);
+    width: 150px;
+    height: 40px;
+    padding-top: 20px;
+    text-align: center;
+    border: 2px solid black;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    transition: background-color 0.5s;
+    
+}
+.cap  a{
+    color: black;
+    text-decoration: none;
+    
+    
+}
+.cap:hover{
+    background-color: white;
+   
+}
 h3{
     color: rgb(83, 115, 255);
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    font-family: 'Times New Roman', Times, serif;
 }
 img{
     width: 200px;
@@ -15,7 +72,7 @@ img{
 p{
     margin: 10px;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 
 }
 a{
@@ -27,33 +84,61 @@ a:hover{
 }
 #container1{
     width: 100%;
-    height: 1200px;
-    background-color: rgb(2, 170, 114)
+    height: 1000px;
+    background-color: rgb(61, 86, 133);
+    display: flex;
+    flex-wrap: wrap;
    
 }
 .asul{
     background-color: rgb(255, 255, 255);
-    width: 250px;
-    height: 350px;
+    width: 260px;
     position: relative;
     float: left;
-    margin: 20px;
+    margin: 50px 20px;
+    padding: 10px;
+    font-size: 20px
+    
 }
 #container2{
-    background-color: rgb(25, 216, 216);
+    background-color: rgb(24, 201, 162);
     width: 100%;
-    height: 300px;
+    height: 360px;
+    position: absolute;
+    bottom: -1400px;
+    color: white;
+    
 
 }
 h1{
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 50px;
+    margin: 20px 70px;
+    font-size: 40px;
 
 }
+
 li{
     background-color: white;
-    width: 200px;
-    height: 50px;
-    border: 2px solid rgb(156, 191, 214);
+    width: 350px;
+    height: 40px;
+    border: 4px solid rgb(156, 191, 214);
     color: rgb(18, 18, 168);
+    position: relative;
+    float: left;
+    left: 0%;
+    margin: 20px;
+    padding-top: 30px;
+    text-align: center;
+
+}
+li:hover{
+    background-color: rgb(190, 190, 214);
+
+}
+li a{
+    color: rgb(0, 0, 116);
+}
+ul{
+    list-style-type: none;
 }
