@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+      <script language="javascript">
+
+            function mostrar_data(){
+              var D= new Date();
+              var dia= D.getDate();
+              var mes= D.getMonth();
+              var año= D.getFullYear();
+              var hora=D.getHours();
+              var minute=D.getMinutes();
+              var secon=D.getSeconds();
+              window.alert("Data:" +dia +"/" +(mes+1) +"/" +año +" "
+              +"Hora:" +hora +":" +minute +":" +secon)
+          }
+          
+
+      
+      
+      </script>
+    
+    
+  </head>
+  <body> 
+
+   <input type="button" value="All date" onclick="mostrar_data()">
+ 
+  </body>
+</html>
