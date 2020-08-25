@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script language="javascript">
+            function Comprovar(){
+            var pass=document.getElementById("text_password").value;
+            if(pass=="123"){
+            window.alert("Password correcte. Benvingut a la meva plana!")
+            }
+            else{
+                window.alert("Password incorrecte. Try again!")
+            }
+            }
+        
+        </script>
+
+    </head>
+    <body>
+        <label>Password:</label> 
+        
+        <input type="password" id="text_password">
+        <br />
+        <br />
+        <input type="button" value="Comprovar" onclick="Comprovar()">
+    </body>
+</html>

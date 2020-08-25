@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script language="javascript">
+        function Saludar(){
+            var nom=document.getElementById("text_nom").value;
+            window.alert("Hola!" +" " +nom);
+        }
+        </script>
+
+    </head>
+    <body>
+        <label>Nom:</label> 
+        
+        <input type="text" id="text_nom">
+        <br />
+        <br />
+        <input type="button" value="Saludar" onclick="Saludar()">
+    </body>
+</html>

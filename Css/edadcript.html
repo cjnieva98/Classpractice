@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script language="javascript">
+            function Correct(){
+                var edad=document.getElementById("text_edad").value;
+                if(edad>=18){
+                    window.alert("You're IN!")
+                }
+                else{
+                    window.alert("Oops!! you're under age!")
+                }
+            }
+    
+        
+        </script>
+
+    </head>
+    <body>
+        <label>EDAD:</label>
+        <input type="text" id="text_edad">
+        <br />
+        <br />
+        <input type="button" value="Verify" onclick="Correct()">
+        
+    </body>
+</html>

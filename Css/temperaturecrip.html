@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script language="javascript">
+            function Comprovar(){
+                var temp=document.getElementById("text_temp").value;
+                var resultat=document.getElementById("resultat");
+                if(temp<15){
+                    resultat.innerHTML="<img src='bobfrio.png'>";
+                }
+                 else{
+                     if(temp<25){
+                         resultat.innerHTML="<img src='medusilla.jpg'>";
+                    }
+                     else{
+                        resultat.innerHTML="<img src='calor.png'>"
+                    }
+
+                }
+
+            }
+            
+        
+        </script>
+        <style type="text/css">
+        #resultat{
+            background-color: rgb(250, 164, 228);
+            width: 400px;
+            height: 300px;
+        }
+        </style>
+
+    </head>
+    <body>
+       
+        <label>TEMP:</label>
+        <input type="text" id="text_temp">
+        <br />
+        <br />
+        <input type="button" value="Comprova" onclick="Comprovar()">
+        <br />
+        <br />
+        <div id="resultat">
+
+        </div>
+  
+    </body>
+</html>
