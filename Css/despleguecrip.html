@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script language="javascript">
+         function Comprar(){
+            var prod=document.getElementById("select_producto").value;
+            var resultat=document.getElementById("resultat");
+            if(prod=="FENDER"){
+                resultat.innerHTML="<img src='guitar1.jpg'>"
+            }
+            else{
+                if(prod=="GIBSON"){
+                    resultat.innerHTML="<img src='guitar2.jpg'>"
+                }
+                else{
+                    if(prod=="TAYLOR"){
+                        resultat.innerHTML="<img src='guitar3.jpg'>"
+                    }
+                    else{
+                        if(prod=="CORT"){
+                            resultat.innerHTML="<img src='guitar4.jpg'>"
+                        }
+                    }
+                }
+            }
+           
+        }
+        </script>
+
+    </head>
+    <body>
+        <h2>Guitars</h2>
+        <select id="select_producto" onchange="Comprar()">
+            <option value="">OUR GUITARS</option>
+            <option value="FENDER">FENDER</option>
+            <option value="GIBSON">GIBSON</option>
+            <option value="TAYLOR">TAYLOR</option>
+            <option value="CORT">CORT</option>
+        </select>
+        <div id="resultat">
+        
+        </div>
+       
+      
+        
+    </body>
+</html>

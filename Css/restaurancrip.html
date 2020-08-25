@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script language="javascript">
+            function primer(){
+                var prod=document.getElementById("resultat").value;
+                var primer=document.getElementById("first");
+                if(prod=="sopa de piopio"){
+                    primer.innerHTML="<img src='pio.jpg'>"
+
+                }
+                else{
+                    if(prod=="Gaspax"){
+                        primer.innerHTML="<img src='gaspax.jpg'>"
+                    }
+                    else{
+                        if(prod=="fua de pat"){
+                            primer.innerHTML="<img src='pat.jpg'>"
+
+                        }
+                    }
+                }
+            }  
+            function segon(){
+                var prod=document.getElementById("resultat2").value;
+                var segon=document.getElementById("second");
+                if(prod=="La vaca muu"){
+                    segon.innerHTML="<img src='muu.jpg'>"
+
+                }
+                else{
+                    if(prod=="Maracons"){
+                        segon.innerHTML="<img src='maca.jpg'>"
+                    }
+                    else{
+                        if(prod=="Lasan de la house"){
+                            segon.innerHTML="<img src='lasan.png'>"
+                        }
+                    }
+                }
+            } 
+            function tercer(){
+                var prod=document.getElementById("resultat3").value;
+                var thrist=document.getElementById("thrist");
+                if(prod=="Gelato"){
+                    thrist.innerHTML="<img src='gelat.jpg'>"
+
+                }
+                else{
+                    if(prod=="trufa"){
+                        thrist.innerHTML="<img src='trufa.jpg'>"
+                    }
+                    else{
+                        if(prod=="Redvelvet"){
+                            thrist.innerHTML="<img src='velvet.jpg'>"
+                        }
+                    }
+                }
+            }          
+        
+        </script>
+        <style type="text/css">
+        img{
+            width: 200px;
+            height: 200px;
+        }
+        h2{
+            color: rgb(255, 102, 0);
+            font-family:serif;
+        }
+        
+        
+        </style>
+
+    </head>
+    <body>
+        <div id="plat1">
+            <h2>PRIMER</h2>
+            <br />
+            <select id="resultat" onchange="primer()">
+                <option value="nothing"></option>
+                <option value="sopa de piopio">sopa de piopio</option>
+                <option value="Gaspax">Gaspax</option>
+                <option value="fua de pat">fua de  pat</option>
+            </select>
+            <br />
+            <br />
+            <div id="first">
+            </div>
+        </div>
+    <div id=plat2>
+        <h2>SEGON</h2>
+        <br />
+            <select id="resultat2" onchange="segon()">
+                <option value="nothing"></option>
+                <option value="La vaca muu">La vaca muu</option>
+                <option value="Maracons">Maracons</option>
+                <option value="Lasan de la house">Lasan de la house</option>
+            </select>
+            <br />
+            <br />
+    </div>
+    <div id="plat3">
+        <div id="second">
+        </div>
+        <h2>POSTRE</h2>
+        <br />
+            <select id="resultat3" onchange="tercer()">
+                <option value="nothing"></option>
+                <option value="Gelato">Gelato</option>
+                <option value="trufa">Trufas</option>
+                <option value="Redvelvet">Red Velvet</option>
+            </select>
+            <br />
+            <br />
+
+        <div id="thrist">
+        </div>
+    </div>
+       
+    </body>
+</html>
