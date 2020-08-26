@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script language="javascript">
+            function sabor(){
+                var prod=document.getElementById("resultat").value;
+                var sabores=document.getElementById("foto1");
+                if(prod=="Shocolat"){
+                    sabores.innerHTML="<img src='xoco.jpg'>"
+
+                }
+                else if(prod=="Vainilia"){
+                    sabores.innerHTML="<img src='vainilla.jpg'>"
+
+                }
+                else if(prod=="Fress"){
+                    sabores.innerHTML="<img src='fress.jpg'>"
+
+                }
+            }
+            function tipo(){
+                var prod=document.getElementById("resultat2").value;
+                var tipos=document.getElementById("foto2");
+                if(prod=="tarrina"){
+                    tipos.innerHTML="<img src='tarrina.jpg'>"
+                }
+                else if(prod=="cucurux"){
+                    tipos.innerHTML="<img src='cucu.jpg'>"
+                }
+                else if(prod=="cafe gelato"){
+                    tipos.innerHTML="<img src='cafe.jpg'>"
+                }
+
+            }
+        
+        </script>
+        <style type="text/css">
+        img{
+            width: 200px;
+            height: 200px;
+        }
+        
+        #gust{
+            background-color: bisque;
+            width: 25%;
+            height: 400px;
+            text-align: center;
+        }
+        .unite{
+            position: relative;
+            float: left;
+            margin: 20px;
+        }
+        
+        </style>
+
+    </head>
+    <body>
+        <div id="cartel">
+            <h1>GELATOS CLOD</h1>
+        </div>
+        <div id="gust" class="unite">
+            <h2>GUST</h2>
+            <select id="resultat" onchange="sabor()">
+                <option value="nothing"></option>
+                <option value="Shocolat">Shocolat</option>
+                <option value="Vainilia">Vainilia</option>
+                <option value="Fress">Fress</option>
+            </select>
+            <br />
+            <br />
+            <div id="foto1">
+            </div>
+        </div>
+        <div id="tipus" class="unite">
+            <h2>TIPUS</h2>
+            <select id="resultat2" onchange="tipo()">
+                <option value="nothing"></option>
+                <option value="tarrina">tarrina</option>
+                <option value="cucurux">cucurux</option>
+                <option value="cafe gelato">cafe gelato</option>
+            </select>
+            <br />
+            <br />
+            <div id="foto2">
+            </div>
+
+        </div>
+
+    </body>
+</html>
