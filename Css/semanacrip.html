@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <script>
+           function hola(){
+               var D=new Date();
+               var DIA=D.getDay();
+               switch(DIA){
+                   case 0:
+                   window.alert("diumenge");
+                   break;
+                   case 1:
+                   window.alert("dilluns");
+                   break;
+                   case 2:
+                   window.alert("dimarts");
+                   break;
+                   case 3:
+                   window.alert("dimecres");
+                   break;
+                   case 4:
+                   window.alert("dijous");
+                   break;
+                   case 5:
+                   window.alert("divendres");
+                   break;
+                   case 6:
+                   window.alert("dissabte");
+                   break;
+               }
+
+           }
+        </script>
+
+    </head>
+    <body>
+        <input type="button" value="tuvida" onclick="hola()">
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <script language="javascript">
+           function hola(){
+               var edad=document.getElementById("text_edad").value;
+               if((edad>=18)&&(edad<=25)){
+                   window.alert("pa' dentro!");
+               }
+               else{
+                   window.alert("nope,pa tu casa");
+               }
+           }
+        </script>
+
+    </head>
+    <body>
+        <h2>Curs 2020/2021</h2>
+        <label>EDAD:</label>
+        <input type="text"  id="text_edad">
+        <br />
+        <br />
+        <input type="button" value="comprovar" onclick="hola()">
+   
+    </body>
+</html>

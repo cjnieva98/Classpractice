@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <script>
+           function hola(){
+               var D=new Date();
+               var DIA=D.getDay();
+               switch(DIA){
+                   case 0:
+                   case 6:
+                   window.alert("cap de setmana");
+                   break;
+                  default:
+                  window.alert("dia laboral");
+                  break;
+               }
+
+           }
+        </script>
+
+    </head>
+    <body>
+        <input type="button" value="todaunavida" onclick="hola()">
+    </body>
+</html>

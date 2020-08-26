@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <script>
+            function hola(){
+                var d=new Date();
+                var mes=d.getMonth();
+                var estasio=document.getElementById("fotosi");
+                if((mes==0)||(mes==1)||(mes==2)){
+                    estasio.innerHTML="<img src='bobfrio.png'>"
+                }
+                else if((mes==3)||(mes==4)||(mes==5)){
+                    estasio.innerHTML="<img src='medusilla.jpg'>"
+                }
+                else if((mes==6)||(mes==7)||(mes==8)){
+                    estasio.innerHTML="<img src='calor.png'>"
+                }
+                else if((mes==9)||(mes==10)||(mes==11)){
+                    estasio.innerHTML="<img src='octubre.jpg'>"
+                }
+            }
+       
+       
+       </script>
+       <style type="text/Css">
+       #fotosi{
+           background-color: blueviolet;
+           width: 400px;
+           height: 400px;
+       }
+       img{
+           width: 300px;
+           height: 300px;
+       }
+       
+       </style>
+    </head>
+    <body>
+        <input type="button" value="estasions de la vida" onclick="hola()">
+        <br />
+        <br />
+        <div id="fotosi">
+
+        </div>
+   
+    </body>
+</html>

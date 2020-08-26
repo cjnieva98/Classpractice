@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <script>
+        function hola(){
+            var d= new Date();
+            var mes=d.getMonth();
+            if(mes==6){
+                window.alert("Falta poc")
+
+            }
+            else{
+                if(mes==7){
+                    window.alert("Vacances")
+
+                }
+                else{
+                    if(mes==8){
+                        window.alert("Vacances acabades")
+                    }
+                    else{
+                        window.alert("Encara falta")
+
+                    }
+                }
+            }
+        }
+           
+        </script>
+
+    </head>
+    <body>
+            <input type="button" value="bollicado" onclick="hola()">
+    </body>
+</html>
