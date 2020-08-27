@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+        function hola(){
+            var d=new Date();
+            var nom=["domingo","lunes","martes","miercoles","jueves","viernes","sabado"]
+            var mesos=["gener","febrer","març","d'abril","maig","juny","juliol","d'agost","setembre","d'octubre","novembre","decembre"];
+            var dia=d.getDay();
+            var die=d.getDate();
+            var mes=d.getMonth();
+            var año=d.getFullYear();
+            window.alert("Avui som" +" " +nom[dia] +" " +die +" " +mesos[mes] +" " +"del" +" " +año);
+           
+        }
+        
+        
+        </script>
+        <input type="button" value="hola que pasa" onclick=hola()>
+       
+    </body>
+</html>

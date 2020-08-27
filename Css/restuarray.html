@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            function platillo(){
+                var plats=["gaspax.jpg","lasan.png","pio.jpg"]
+                var plato=document.getElementById("plat").value;
+                var capa=document.getElementById("capafoto");
+                capa.innerHTML=
+                    "<img src="+plats[plato]+">";
+               
+
+             
+            }
+        
+        
+        </script>
+        <select id="plat" onchange="platillo()">
+            <option value=""></option>
+            <option value="0">gaspax</option>
+            <option value="1">lasan de carn</option>
+            <option value="2">sopa de pollo</option>
+        </select>
+        <div id="capafoto">
+
+        </div>
+       
+    </body>
+</html>

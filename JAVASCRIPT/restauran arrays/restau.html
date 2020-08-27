@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function primero(){
+                var plats=["tartar.jpg","ensalada.jpg","tempura.jpg"]
+                var primero=document.getElementById("primer").value;
+                var capa=document.getElementById("capafoto1");
+                capa.innerHTML=
+                    "<img src="+plats[primero]+">"
+
+            }
+            function segundo(){
+                var plats=["yakisoba.jpg","ramen.jpg","sushi.jpg"]
+                var segundo=document.getElementById("segon").value;
+                var capa=document.getElementById("capafoto2");
+                capa.innerHTML=
+                    "<img src="+plats[segundo]+">"
+
+            }
+        
+        </script>
+        <style type="text/css">
+        body{
+            background-image: url(fondo.jpg);
+            margin: 0px;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 30px;
+        }
+        #titulo{
+            background-color: rgb(250, 178, 228);
+            width: 100%;
+            height: 60px;
+            text-align: center;
+            color: rgb(54, 0, 104)
+        }
+        .unite{
+            position: relative;
+            float: left;
+            margin: 10px;
+            border: 1px solid grey;
+            border-radius: 10px;
+            color: rgb(32, 0, 65)
+            
+        }
+        #capa1{
+            background-color: rgb(227, 191, 252);
+            width: 25%;
+            height: 400px;
+            text-align: center;
+        }
+        #capa2{
+            background-color: rgb(213, 151, 255);
+            width: 25%;
+            height: 400px;
+            text-align: center;
+
+        }
+        
+        </style>
+
+    </head>
+    <body>
+        <div id="titulo">
+            <h1>SHIN restaurant</h1>
+        </div>
+        <div id="capa1" class="unite">
+            <h2>Primero</h2>
+            <select id="primer" onchange="primero()">
+                <option value="nothing"></option>
+                <option value="0">Tartar</option>
+                <option value="1">Ensalada de algas</option>
+                <option value="2">Tempura</option>
+            </select>
+            <br />
+            <br />
+            <div id="capafoto1">
+
+            </div>
+        </div>
+        <div id="capa2" class="unite">
+                <h2>Segundo</h2>
+                <select id="segon" onchange="segundo()">
+                    <option value="nothing"></option>
+                    <option value="0">Yakisoba</option>
+                    <option value="1">Ramen</option>
+                    <option value="2">Bandeja sushi</option>
+                </select>
+                <br />
+                <br />
+                <div id="capafoto2">
+    
+                </div>
+            </div>
+       
+    </body>
+</html>
