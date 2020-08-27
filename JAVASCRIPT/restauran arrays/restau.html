@@ -18,6 +18,14 @@
                     "<img src="+plats[segundo]+">"
 
             }
+            function tercero(){
+                var plats=["mochi.jpg","dorayaki.png","dango.jpg"]
+                var tercero=document.getElementById("tercer").value;
+                var capa=document.getElementById("capafoto3");
+                capa.innerHTML=
+                    "<img src="+plats[tercero]+">"
+
+            }
         
         </script>
         <style type="text/css">
@@ -40,7 +48,7 @@
         .unite{
             position: relative;
             float: left;
-            margin: 10px;
+            margin: 50px;
             border: 1px solid grey;
             border-radius: 10px;
             color: rgb(32, 0, 65)
@@ -59,6 +67,14 @@
             text-align: center;
 
         }
+        #capa3{
+            background-color: rgb(227, 191, 252);
+            width: 25%;
+            height: 400px;
+            text-align: center;
+
+        }
+        
         
         </style>
 
@@ -94,7 +110,21 @@
                 <div id="capafoto2">
     
                 </div>
+        </div>
+        <div id="capa3" class="unite">
+            <h2>Postres</h2>
+            <select id="tercer" onchange="tercero()">
+                <option value="nothing"></option>
+                <option value="0">mochis</option>
+                <option value="1">dorayaki</option>
+                <option value="2">dango</option>
+            </select>
+            <br />
+            <br />
+            <div id="capafoto3">
+
             </div>
+    </div>
        
     </body>
 </html>
