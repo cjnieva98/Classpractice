@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script language="javascript">
+            function hola(){
+                var fotos=["meme1.jpg","meme2.jpg","bebe.jfif"]
+                var I=0;
+                for(I=0;I<fotos.length;I++){
+                     var capa=document.getElementById("capa"+I)
+                        capa.innerHTML="<img src='"+fotos[I]+"'>";
+                }
+                    
+            }
+        
+        </script>
+        <input type="button" value="ole los caracole" onclick="hola()">
+        <br />
+        <br />
+        <div id="capa0">
+
+        </div>
+        <div id="capa1">
+
+        </div>
+        <div id="capa2">
+
+        </div>
+       
+    </body>
+</html>

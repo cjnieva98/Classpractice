@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script language="javascript">
+            function acabado(){
+                var correctes=["Aerosmith","Eric Clapton","Queen"]
+                var I=0;
+                for(I+0;I<correctes.length;I++){
+                    var capa=document.getElementById("capafoto"+I);
+                    
+                    var preg=document.getElementById("capa"+I).value;
+                    if(preg==correctes[I])
+
+                    
+                }
+                
+             
+
+            }
+             
+        
+        </script>
+    </head>
+    <body>
+        <div>
+            <h2>Rock Music Test</h2>
+        </div>
+        <br />
+        <div>
+            <p>
+                1.What band recorded the rock classic "Walk This Way"?
+            </p>
+        </div>
+           <div>
+               <select id="capa0">
+                   <option value="nothing"></option>
+                   <option value="0">Aerosmith</option>
+                   <option value="1">Van Halen</option>
+                   <option value="2">Led Zeppeling</option>
+               </select>
+           </div>
+           
+        <br />
+        <div id="capafoto1">
+
+        </div>
+        <div>
+                <p>
+                    2.Which member of Cream wrote the lyrics for "Sunshine of Your Love"?
+                </p>
+        </div>
+        <div>
+                <select id="capa1">
+                    <option value="nothing"></option>
+                    <option value="0">Ringo Starr</option>
+                    <option value="1">Eric Clapton</option>
+                    <option value="2">Jack Bruce</option>
+                </select>
+            </div>
+        <br />
+        <div id="capafoto2">
+
+        </div>
+        <div>
+                <p>
+                    3.Who originally recorded, "Stone Cold Crazy"?
+                </p>
+        </div>
+        <div>
+                <select id="capa2">
+                    <option value="nothing"></option>
+                    <option value="0">Rammstein</option>
+                    <option value="1">Metallica</option>
+                    <option value="2">Queen</option>
+                </select>
+            </div>
+        <div id="capafoto3">
+            
+        </div>
+        <br />
+        <br />
+        <input type="button" value="Finish" onclick="acabado()">
+  
+       
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+
+    </head>
+    <body>
+        <h2>Multiplication</h2>
+        <label>NUM:</label>
+        <input type="text" id="text_calculate">
+        <input type="button" value="calcular" onclick="hola()">
+        <br />
+        <br />
+
+        <script language="javascript">
+            function hola(){
+                var calcular=document.getElementById("text_calculate").value;
+                var I=0;
+            
+        document.write("<table width='600' border='1'>")
+                
+                for(I=0;I<11;I++){
+                     document.write("<tr><td>5</td>")
+                     document.write("<td>"+I+"</td>")
+                     document.write("<td>"+I*5+"</td></tr>")
+                }
+               
+        document.write("</table>")
+            }
+            </script>
+
+       
+  
+       
+    </body>
+</html>
