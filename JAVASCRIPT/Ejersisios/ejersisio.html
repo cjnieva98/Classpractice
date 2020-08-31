@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <script>
+           function hola(){
+                var usuari=document.getElementById("text_numeros").Value;
+                var N= 1;
+                var I=0;
+                for(I=1;I<=usuari;I++){
+                     N=N*2;
+                
+                }
+                window.alert(N);
+           }
+           
+       
+       </script>
+
+    </head>
+    <body>
+        <h2>Dobles</h2>
+        <label>Numero:</label>
+        <input type="text" id="text_numeros">
+        <br />
+        <br />
+
+        <input type="button" value="Resultat" onclick=hola();>
+       
+    </body>
+</html>
