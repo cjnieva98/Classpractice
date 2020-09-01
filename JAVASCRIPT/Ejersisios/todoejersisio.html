@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script language="javascript">
+            function validar(){
+                var has_errors=false;
+                var text_nom=document.getElementById("text_nom").value;
+                 var text_pass=document.getElementById("text_pass").value;
+                 var text_email=document.getElementById("text_email").value;
+                if(text_nom==""){
+                    window.alert("incorrecte");
+                    has_errors=true;
+
+                }
+                if(text_nom.length<3){
+                    window.alert("minim 3 caracters");
+                    has_errors=true;
+
+                }
+                if(has_errors==false){
+                    formulari.submit();
+                }
+                if(text_pass.trim=="pepito"){
+                    window.alert("correcte!");
+
+                }
+                if(text_pass.toLowerCase()="pepito");{
+
+                }
+                if(text_email.indexOf("@")==-1){
+
+                }
+                
+            }
+        
+        </script>
+        <style type="text/css">
+        
+        </style>
+
+    </head>
+    <body>
+        <form method="" action="" id="formulari">
+            <labe for="text_nom"></labe>
+            Name:
+            <input type="text" name="nom" id="text_nom">
+            <br />
+            <br />
+            <label for="text_pass"></label>
+            Password:
+            <input type="password" name="nom2" id="text_pass">
+            <br />
+            <br />
+            Email:
+            <input type="text" id="text_email">
+            <br />
+            <br />
+            <input type="submit" onclick="validar()">
+           
+
+
+
+
+
+
+
+        </form>
+  
+       
+    </body>
+
+</html>
