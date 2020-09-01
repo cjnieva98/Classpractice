@@ -1,0 +1,37 @@
+    
+input{
+    margin: 70px;
+}
+.unite{
+    width: 200px;
+    height: 200px;
+
+}
+#capa1{
+    background-color: blue;
+    position: absolute;
+    left: 20px;
+    top: 175px
+
+}
+#capa2{
+    background-color: green;
+    position: absolute;
+    left: 240px;
+    top: 175px;
+}
+#capa3{
+    background-color: red;
+    position: absolute;
+    left: 460px;
+    top: 175px
+   
+}
+#capa4{
+    background-color: yellow;
+    position: absolute;
+    left: 690px;
+    top: 175px
+
+}
+
