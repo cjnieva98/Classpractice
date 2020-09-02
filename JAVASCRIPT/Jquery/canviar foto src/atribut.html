@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous">
+        </script>
+       <style>
+           img{
+               width: 350px;
+               height: 300px;
+           }
+       
+       </style>
+
+    </head>
+    <body>
+        <div>
+            <img src="horse1.jpg" id="imatge">
+        </div>
+        <br />
+        <br />
+        <input type="button" value="foto 1" id="boto1">
+        <input type="button" value="foto 2" id="boto2">
+        <input type="button" value="foto 3" id="boto3">
+      
+        <script language="javascript">
+            $(function(){
+                $('#boto1').click(function(){
+                    $('#imatge').attr('src','horse1.jpg')
+
+                });
+                $('#boto2').click(function(){
+                    $('#imatge').attr('src','horse2.jpg')
+
+                });
+                $('#boto3').click(function(){
+                    $('#imatge').attr('src','horse3.jpg')
+
+                });
+
+
+            });
+           
+        
+        
+        </script>
+
+    </body>
+</html>

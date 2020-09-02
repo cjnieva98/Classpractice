@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous">
+        </script>
+        <style>
+            #capa2 img{
+                width: 300px;
+                height: 220px;
+                border-radius: 20px; 
+            }
+            #principal{
+                background-color: bisque;
+            }
+            #capa1{
+                text-align: center;
+                font-family:cursive;
+                background-color: rgb(255, 146, 146);
+                width: 100%;
+                height: 40px;
+            }
+            input{
+                margin: 60px;
+            }
+            #capa3{
+                width: 300px;
+                height: 200px;
+                text-align: justify;
+                position: absolute;
+                bottom: 30px;
+                left: 200px;
+                border-radius: 20px;
+                background-color: rgb(255, 146, 146);
+            }
+            #capa2{
+                position: absolute;
+                left: 200px;
+                top: 200px
+            }
+            #principal{
+                width: 750px;
+                height: 650px;
+            }
+
+        </style>
+       
+    </head>
+<div id="principal">
+    <body>
+        <div id="capa1">
+           <h1>Adopta un mixi</h1>  
+        </div>
+        <input type="button" value="Flower" id="boto1">
+        <input type="button" value="Sunny" id="boto2">
+        <input type="button" value="Casper" id="boto3">
+        <input type="button" value="Olaf" id="boto4">
+        <br />
+        <br />
+        <div id="capa2">
+            <img src="mixi5.jpg" id="imatge">
+
+        </div>
+        <div id="capa3">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non iaculis nisl, 
+                ac pharetra ipsum. Pellentesque lacus nunc, lobortis id leo eget, gravida faucibus tortor. 
+                Integer mi diam, facilisis quis mauris vitae, lobortis lacinia nunc. Praesent ut gravida est. 
+                Suspendisse tempus enim vitae auctor ultricies.  
+            </p>
+        </div> 
+    </div>
+        <script language="javascript">
+            $(function(){
+                $('#boto1').click(function(){
+                    $('#principal').css('background-image','url("flores.jpg")');
+                    $('#capa1').css('background-color','blueviolet');
+                    $('#capa1').css('color','white');
+                    $('#capa3').css('background-color','blueviolet');
+                    $('#capa3').css('color','white')
+                    $('#imatge').attr('src','mixi.jpg')
+                    
+                });
+                $('#boto2').click(function(){
+                    $('#principal').css('background-image','url("playa.jpg")');
+                    $('#capa1').css('background-color','aqua');
+                    $('#capa1').css('color','red');
+                    $('#capa3').css('background-color','aqua');
+                    $('#capa3').css('color','red')
+                    $('#imatge').attr('src','mixi2.jpg')
+                });
+                $('#boto3').click(function(){
+                    $('#principal').css('background-image','url("otonio.jpg")');
+                    $('#capa1').css('background-color','yellow');
+                    $('#capa1').css('color','black');
+                    $('#capa3').css('background-color','yellow');
+                    $('#capa3').css('color','black')
+                    $('#imatge').attr('src','mixi4.jpg')
+                });
+                $('#boto4').click(function(){
+                    $('#principal').css('background-image','url("invierno.jpg")');
+                    $('#capa1').css('background-color','blue');
+                    $('#capa1').css('color','white');
+                    $('#capa3').css('background-color','blue');
+                    $('#capa3').css('color','white')
+                    $('#imatge').attr('src','mixi3.jpg')
+                });
+
+            });
+           
+        
+        
+        </script>
+
+    </body>
+</html>
