@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous">
+        </script>
+        <style type="text/Css">
+            #capa2 img{
+                width: 200px;
+                height: 200px;
+            }
+            #capa1 img{
+                width: 500px;
+                height: 400px;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <div id="capa1">
+            <img src="logo.jpg" id="imatge">
+
+        </div>
+        <div id="capa2" class="unite">
+                <img src="harley1.jpg" id="foto1">
+                <img src="harley2.jpg" id="foto2">
+                <img src="harley3.jpg" id="foto3">
+                <img src="harley4.jpg" id="foto4">
+
+        </div>
+      
+        <script language="javascript">
+            $(function(){
+               $('#foto1').click(function(){
+                   $('#imatge').attr('src','harley1.jpg')
+
+               });
+               
+
+
+            });
+           
+        
+        
+        </script>
+
+    </body>
+</html>
