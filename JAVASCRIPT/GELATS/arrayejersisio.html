@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script language="javascript">
+            function primer(){
+                var gusto=["chocolate.jpg","fresa.jpg","vainilla.jpg","limon.jpg"]
+                var gust=document.getElementById("gusts").value;
+                var capa=document.getElementById("capafoto1");
+                capa.innerHTML=
+                    "<img src="+gusto[gust]+">"
+
+                var tipo=["tarrina.jpg","cucurux.jpg","copa.jpg"]
+                var tipus=document.getElementById("tipus").value;
+                var capa=document.getElementById("capafoto2");
+                capa.innerHTML=
+                    "<img src="+tipo[tipus]+">"
+                
+                var gelats=
+                    [
+                        ["tch.jpg","cch.jpg","copach.jpg"]
+                    ]
+
+                var gust=document.getElementById("gusts").value;
+                var tipus=document.getElementById("tipus").value;
+                var capa=document.getElementById("resultat");
+                capa.innerHTML=
+                    "<img src"
+
+
+                
+                
+            }
+        
+        
+        </script>
+        <style type="text/css">
+        .unite{
+            position: relative;
+            float: left;
+            margin: 10px;
+            background-color: rgb(255, 170, 65);
+            width: 20%;
+            height: 400px;
+            text-align: center;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+        h2{
+            text-align: center;
+        }
+        #titul{
+            background-color: beige;
+            width: 60%;
+            height: 60px;
+            text-align: center;
+           
+        }
+        #resultat{
+            background-color: rgb(248, 137, 46);
+            width: 52%;
+            height: 400px;
+            position: relative;
+            float: left;
+            margin: 10px 0px;
+        }
+
+        </style>
+
+    </head>
+    <body>
+        <div id="titul">
+            <h1>GELATS</h1>
+        </div>
+        <div id="capa1" class="unite">
+            <h2>GUST</h2>
+            <select id="gusts" onchange="primer()">
+                <option value="nothing"></option>
+                <option value="0">xoco</option>
+                <option value="1">fres</option>
+                <option value="2">vainilla</option>
+                <option value="3">limon</option>
+            </select>
+            <br />
+            <br />
+            <div id="capafoto1">
+
+            </div>
+
+        </div>
+        <div id="capa2" class="unite">
+                <h2>TIPUS</h2>
+                <select id="tipus" onchange="primer()">
+                    <option value="nothing"></option>
+                    <option value="0">tarrina</option>
+                    <option value="1">cucurux</option>
+                    <option value="2">copa helado</option>
+                </select>
+                <br />
+                <br />
+                <div id="capafoto2">
+    
+                </div>
+    
+            </div>
+        <div id="resultat">
+            <h2>YOUR GELAT</h2>
+            
+
+        </div>
+       
+    </body>
+</html>
