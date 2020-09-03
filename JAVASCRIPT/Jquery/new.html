@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous">
+        </script>
+        <style>
+            #capa1{
+                background-color: blueviolet;
+                width: 400px;
+                height: 400px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <input type="button" value="HOLA" id="boto_hola">
+        <br />
+        <br />
+        <div id="capa1">
+
+        </div>
+        <script language="javascript">
+            $(function(){
+                $('#boto_hola').click(function(){
+                    $('#capa1').load('https://www.w3schools.com/Jquery/demo_test.txt');
+
+
+                });
+
+
+            });
+        </script>
+    </body>
+</html>

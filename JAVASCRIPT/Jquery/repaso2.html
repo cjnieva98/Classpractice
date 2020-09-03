@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous">
+        </script>
+
+        <style type="text/css">
+        .titolcolor{
+            color:red;
+            text-decoration: underline;
+            font-size: 28px;
+        }
+        
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1> Maecenas ullamcorper </h1>
+            <p>
+                Maecenas ullamcorper orci efficitur, tristique enim ac, pharetra quam. 
+                Proin nec orci malesuada, pretium eros non, congue arcu. Integer in massa 
+                ultricies, elementum justo id, elementum tellus. Donec a nisl efficitur tortor 
+                condimentum euismod. Aenean sit amet lacus magna. Sed tempor non ipsum vitae 
+                placerat. Nulla dictum condimentum ex in maximus. Donec a nisl efficitur tortor 
+                condimentum euismod. Aenean sit amet lacus magna. Sed tempor non ipsum vitae 
+                placerat. Nulla dictum condimentum ex in maximus.  
+
+            </p>
+        </div>
+        <br />
+        <input type="button" value="color" id="boto_color">
+        <input type="button" value="adeu color" id="boto_nocolor">
+        <input type="button" value="nonstop color" id="boto_2color">
+        
+        <script language="javascript">
+            $(function(){
+                $('#boto_color').click(function(){
+                    //$('h1').css('color','red');
+                    $('h1').addClass('titolcolor')
+
+                });
+                $('#boto_nocolor').click(function(){
+                    //$('h1').css('color','red');
+                    $('h1').removeClass('titolcolor')
+
+                });
+                $('#boto_2color').click(function(){
+                    //$('h1').css('color','red');
+                    $('h1').toggleClass('titolcolor')
+                   
+
+                });
+
+
+
+            });
+        
+        
+        
+        </script>
+    </body>
+</html>

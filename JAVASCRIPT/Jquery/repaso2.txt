@@ -8,18 +8,5 @@
         </script>
     </head>
     <body>
-        <script language="javascript">
-            $(document).ready(function(){
-
-
-            });
-            $(function(){
-
-            });
-        
-        
-        </script>
-  
-       
     </body>
 </html>

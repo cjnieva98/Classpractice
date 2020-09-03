@@ -8,18 +8,20 @@
         </script>
     </head>
     <body>
+        <a href="https://www.helloween.org/">Click me!</a>
+
+
         <script language="javascript">
-            $(document).ready(function(){
-
-
-            });
             $(function(){
+                $('a').click(function(){
+                    window.alert('I want out!');
+                    return false;
+
+                });
+
 
             });
-        
         
         </script>
-  
-       
     </body>
 </html>

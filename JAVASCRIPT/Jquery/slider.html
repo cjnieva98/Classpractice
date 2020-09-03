@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous">
+        </script>
+        <script
+          src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+          integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+          crossorigin="anonymous">
+        </script>
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    </head>
+    <body>
+        <labe>RED</labe>
+        <input type="text" id="resultat1">
+        <br />
+        <br />
+        <div id="red"></div>
+        <br />
+        <br />
+        <label>GREEN</label>
+        <input type="text" id="resultat2">
+        <br />
+        <br />
+        <div id="green"></div>
+        <br />
+        <br />
+        <label>BLUE</label>
+        <input type="text" id="resultat3">
+        <br />
+        <br />
+        <div id="blue"></div>
+
+        <script language="javascript">
+            $(function(){
+                $('#red').slider({
+                    range:"min",
+                    min: 0,
+                    max: 255,
+                    value: 0,
+                    slide:function(event,ui){
+                        $('#resultat1').val(ui.value);
+                    } 
+                });
+                $('#green').slider({
+                    range:"min",
+                    min: 0,
+                    max: 255,
+                    value: 0,
+                    slide:function(event,ui){
+                        $('#resultat2').val(ui.value);
+                    }
+                });
+                $('#blue').slider({
+                    range:"min",
+                    min: 0,
+                    max: 255,
+                    value: 0,
+                    slide:function(event,ui){
+                        $('#resultat3').val(ui.value);
+                    }      
+                });
+                $('#resultat1').val($('#red').slider("value"));
+                $('#resultat2').val($('#green').slider("value"));
+                $('#resultat3').val($('#blue').slider("value"));
+
+            });
+
+
+        </script>
+    </body>
+</html>
