@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous">
+        </script>
+        <style>
+            input{
+                margin: 10px;
+            }
+           p{
+            background-color: rgb(206, 175, 235);
+            width: 400px;
+            height: 200px;
+           }
+            
+           
+
+        </style>
+    </head>
+    <body>
+        <input type="button" value="noticia 1" id="boto1">
+        <input type="button" value="noticia 2" id="boto2">
+        <input type="button" value="noticia 3" id="boto3">
+        <br />
+        <br />
+       <h1>NOTICIAS HOY</h1>
+       <h2 id="titul">La vida es shula</h2>
+       <p id="cosito">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        <script language="javascript">
+            $(function(){
+                $('#boto1').click(function(){
+                    $.get('https://jsonplaceholder.typicode.com/posts/1',function(data,status){
+                        $('#titul').html(data.title);
+                        $('#cosito').html(data.body);
+
+                    });
+
+                });
+                $('#boto2').click(function(){
+                    $('#capa1').text('NOTICIA 2');
+                    $.get('https://jsonplaceholder.typicode.com/posts/2',function(data,status){
+                        $('#titul').html(data.title);
+                        $('#cosito').html(data.body);
+
+                    });
+
+                });
+                $('#boto3').click(function(){
+                    $('#capa1').text('NOTICIA 3');
+                    $.get('https://jsonplaceholder.typicode.com/posts/3',function(data,status){
+                        $('#titul').html(data.title);
+                        $('#cosito').html(data.body);
+
+                    });
+
+
+                });
+
+            });
+           
+        </script>
+    </body>
+</html>
