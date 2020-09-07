@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous">
+        </script>
+        <style>
+            .unite{
+                background-color: rgb(211, 180, 240);
+                width: 300px;
+                height: 300px;
+                border: 1px solid black;
+                position: relative;
+                float: left;
+                margin: 10px;
+                
+            }
+
+        </style>
+    </head>
+    <body>
+        <input type="button" value="Concursos" id="boto1">
+        <br />
+        <br  />
+        <div id="capa1">
+
+        </div>
+        <script language="javascript">
+             $(function(){
+                $('#boto1').click(function(){
+                    $.get('https://cors-anywhere.herokuapp.com/http://server.boka2.com/ws/seleccions.json',function(data,status){
+                        var I=0              
+                        for(I=0;I<data.Seleccions.length;I++){
+                            //podem data.Seleccions perque data es un objete, l'array esta dins de Seleccions per tant la variable[I] ens la llegira Seleccions
+                        var seleccions=data.Seleccions[I]
+                        //$('#capa1').append(seleccions.title)
+                        //$('#capa1').append('<hr>')
+                        //$('#capa1').append(seleccions.nombrePlaces)
+                        //$('#capa1').append(seleccions.ens)
+                        $('#capa1').append('<div class="unite"> <p>'+seleccions.title+'</p> <p>'+seleccions.nombrePlaces+'</p> <p>'+seleccions.ens+'</p> </div>');
+                        }
+
+
+                    });
+
+                });
+
+            });
+              
+           
+        </script>
+    </body>
+</html>

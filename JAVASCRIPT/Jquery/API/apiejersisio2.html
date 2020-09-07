@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous">
+        </script>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <h1>BISICLET BCN</h1>
+        <input type="button" value="Encuentra una bisiclet" id="boto1">
+        <div id="capa1">
+
+        </div>
+        <script language="javascript">
+            $(function(){
+                $('#capa1').click(function(){
+                    $.get('https://cors-anywhere.herokuapp.com/http://server.boka2.com/ws/bicis.json',function(data,status){
+                        var bisi=data.stations[0]
+                        $('#capa1').append(stations.station_id)
+                    });
+
+                });
+
+            });
+              
+           
+        </script>
+    </body>
+</html>
