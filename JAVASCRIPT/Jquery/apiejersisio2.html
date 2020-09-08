@@ -7,6 +7,13 @@
             crossorigin="anonymous">
         </script>
         <style>
+            .unite{
+                background-color: blueviolet;
+                width: 400px;
+                height: 310px;
+                border: 1px solid black;
+                
+            }
 
         </style>
     </head>
@@ -22,11 +29,16 @@
                     $.get('https://cors-anywhere.herokuapp.com/http://server.boka2.com/ws/bicis.json',function(data,status){
                         var bisi=data.data.stations[0]
                         var I=0
+                        alert("hola")
                         for(I=0;I<data.data.stations.length;I++){
                         $('#capa1').append(data.data.stations[I].station_id +"<br>")
-                        $('#capa1').append(data.data.stations[I].num_bikes_available +"<br>")
+                        $('#capa1').append(bisi.num_bikes_available +"<br>")
                         $('#capa1').append(bisi.num_bikes_available_types.mechanical +"<br>")
                         $('#capa1').append(bisi.num_bikes_available_types.ebike +"<br>")
+                        $('#capa1').append(bisi.num_docks_available +"<br>")
+                        $('#capa1').append(bisi.status +"<br>")
+                       
+
                         }
                         
                      
